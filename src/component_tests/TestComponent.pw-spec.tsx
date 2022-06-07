@@ -1,7 +1,6 @@
 import { expect, test } from "@playwright/experimental-ct-react";
 import React from "react";
-import TestComponent from "../TestComponent";
-import { Breadcrumbs } from "../widget/Breadcrumbs";
+import { Breadcrumbs, TestComponent } from "../";
 
 test("should work", async ({ mount }) => {
   const component = await mount(
