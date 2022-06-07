@@ -1,0 +1,27 @@
+{
+    "include": [
+        "./src"
+    ],
+    "compilerOptions": {
+        "outDir": "./dist",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "incremental": true,
+        "declaration": true,
+        "noImplicitAny": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "target": "es6",
+        "sourceMap": true,
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ]
+    }
+}
