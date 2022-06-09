@@ -6,7 +6,6 @@ import { extname } from "path";
 export const WS_BROKER_URL = `ws://${window.location.host}}`;
 
 export interface DefaultTitleProps {
-  total: number;
   hint?: string;
 }
 
@@ -15,12 +14,7 @@ export function validateFileExtension(file: File): string {
 }
 
 export const TestComponent: FC<DefaultTitleProps> = memo((props) => {
-  const { hint, total } = props;
+  const { hint } = props;
 
-  return (
-    <div>
-      <Typography variant="h6">{`Presenting ${total} results`}</Typography>
-      {hint}
-    </div>
-  );
+  return <div>{hint}</div>;
 });
