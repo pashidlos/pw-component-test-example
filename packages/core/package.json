@@ -1,0 +1,22 @@
+{
+  "name": "@example/core",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Pavlo Strunkin <pashidlos@gmail.com>",
+  "homepage": "https://github.com/pashidlos/pw-component-test-example#readme",
+  "license": "ISC",
+  "module": "dist/es/index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc && tsc --module es6 --outDir ./dist/es",
+    "test-ct": "playwright test -c playwright-ct.config.ts"
+  },
+  "peerDependencies": {
+    "lodash": ">=4",
+    "typescript": ">=4"
+  }
+}

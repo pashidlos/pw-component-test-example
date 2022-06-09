@@ -1,9 +1,5 @@
 {
-    "include": [
-        "./src"
-    ],
     "compilerOptions": {
-        "outDir": "./dist",
         "module": "commonjs",
         "moduleResolution": "node",
         "jsx": "react",
@@ -23,5 +19,8 @@
             "dom.iterable",
             "esnext"
         ]
-    }
+    },
+    "exclude": [
+        "cypress"
+    ]
 }
