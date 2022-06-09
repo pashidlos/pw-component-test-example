@@ -130,3 +130,4 @@ dist
 /playwright/.cache/
 
 .idea/
+*playwright-report/

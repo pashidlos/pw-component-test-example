@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "outDir": "./dist",
         "module": "commonjs",
         "moduleResolution": "node",
         "jsx": "react",
@@ -20,7 +21,7 @@
             "esnext"
         ]
     },
-    "exclude": [
-        "cypress"
+    "include": [
+        "./src"
     ]
 }
