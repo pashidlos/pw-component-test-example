@@ -15,6 +15,6 @@ export function validateFileExtension(file: File): string {
 
 export const TestComponent: FC<DefaultTitleProps> = memo((props) => {
   const { hint } = props;
-
+console.log("asdasasdfasdadsfasdf")
   return <div>{hint}</div>;
 });
