@@ -1,10 +1,10 @@
 import { expect, test } from "@playwright/experimental-ct-react";
 import React from "react";
-import { DisableIcon } from "./DisableIcon";
 import TestComponent from "./TestComponent";
+import { DisableIcon } from "./DisableIcon";
 
-test("should work", async ({ mount }) => {
-  const component = await mount(<TestComponent icon={DisableIcon}/>);
+test("should work local icon", async ({ mount }) => {
+  const component = await mount(<TestComponent icon={DisableIcon} />);
 
   await expect(component).toContainText("Test");
 });
