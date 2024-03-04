@@ -17,7 +17,7 @@
         "strictNullChecks": true,
         "resolveJsonModule": true,
         "target": "es6",
-        "sourceMap": true,
+        "skipLibCheck": true,
         "lib": [
             "dom",
             "dom.iterable",

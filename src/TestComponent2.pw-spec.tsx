@@ -4,7 +4,7 @@ import React from "react";
 import TestComponent from "./TestComponent";
 
 test("should work external icon", async ({ mount }) => {
-  const component = await mount(<TestComponent icon={AccountTreeIcon} />);
+  const component = await mount(<TestComponent icon={<AccountTreeIcon/>} />);
 
   await expect(component).toContainText("Test");
 });

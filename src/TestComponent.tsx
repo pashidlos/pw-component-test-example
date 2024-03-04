@@ -1,19 +1,23 @@
-import { SvgIconProps } from "@mui/material";
-import React, { ComponentType } from "react";
-import { DisableIcon } from "./DisableIcon";
+import {Button} from "@mui/material";
+import React from "react";
+
 
 export interface DataViewToolbarActionButtonProps {
-    icon: ComponentType<SvgIconProps>;
+    icon: React.ReactNode;
 }
 
 const TestComponent = (props: DataViewToolbarActionButtonProps) => {
-  const { icon: Icon } = props;
-  return (
-    <div>
-      <Icon />
-      Test
-    </div>
-  );
+    const {icon: Icon} = props;
+
+    return (
+        <div>
+            <Button
+                startIcon={Icon}
+            >
+                Test
+            </Button>
+        </div>
+    );
 };
 
 export default TestComponent;
